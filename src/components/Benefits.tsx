@@ -1,5 +1,4 @@
 import { Lightbulb, TrendingUp, Target as TargetIcon, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const benefits = [
   {
@@ -56,12 +55,6 @@ const Benefits = () => {
                 </div>
               );
             })}
-          </div>
-
-          <div className="text-center">
-            <Button size="lg" className="rounded-xl px-8 py-6 text-base">
-              Solicitar Consultoria Gratuita →
-            </Button>
           </div>
         </div>
       </div>
