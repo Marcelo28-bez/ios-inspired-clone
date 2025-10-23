@@ -169,7 +169,7 @@ const Contact = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  Tecnologia própria (Sistema Sphinx)
+                  Tecnologia própria
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
