@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -116,6 +116,23 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
+
+                <a 
+                  href="https://wa.me/5585981362242" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex gap-4 p-4 rounded-xl bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-colors"
+                >
+                  <div className="bg-[#25D366] w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold mb-1">WhatsApp</div>
+                    <div className="text-muted-foreground">
+                      Clique para conversar conosco
+                    </div>
+                  </div>
+                </a>
 
                 <div className="flex gap-4">
                   <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
