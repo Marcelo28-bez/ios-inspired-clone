@@ -1,5 +1,6 @@
 import { TrendingUp, ShoppingCart, PieChart, Activity, RefreshCw, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const categories = [
   { icon: TrendingUp, name: "Economia", count: 12 },
@@ -74,7 +75,9 @@ const DataHub = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <Button className="rounded-xl">Ver Todos os Dados →</Button>
+            <Button asChild className="rounded-xl">
+              <Link to="/hub-pesquisas">Acessar Hub Completo de Pesquisas IBGE →</Link>
+            </Button>
           </div>
         </div>
       </div>

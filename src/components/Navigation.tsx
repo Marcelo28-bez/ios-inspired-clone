@@ -34,24 +34,24 @@ const Navigation = () => {
             </div>
 
             <div className="hidden md:flex items-center gap-8">
-              <a href="#inicio" className="text-foreground hover:text-primary smooth-transition font-medium">
+              <a href="/#inicio" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Início
               </a>
-              <a href="#sobre" className="text-foreground hover:text-primary smooth-transition font-medium">
+              <a href="/#sobre" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Sobre
               </a>
-              <a href="#servicos" className="text-foreground hover:text-primary smooth-transition font-medium">
+              <a href="/#servicos" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Serviços
               </a>
-              <a href="#hub" className="text-foreground hover:text-primary smooth-transition font-medium">
+              <a href="/hub-pesquisas" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Hub de Pesquisas
               </a>
-              <a href="#noticias" className="text-foreground hover:text-primary smooth-transition font-medium">
+              <a href="/#noticias" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Notícias
               </a>
-              <Button asChild className="rounded-xl">
-                <a href="#contato">Contato</a>
-              </Button>
+          <Button asChild className="rounded-xl">
+            <a href="/#contato">Contato</a>
+          </Button>
             </div>
           </div>
         </div>
