@@ -121,17 +121,10 @@ const Contact = () => {
                   href="https://wa.me/5585981362242" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex gap-4 p-4 rounded-xl bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-colors"
+                  className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#25D366] hover:bg-[#25D366]/90 transition-colors"
+                  aria-label="WhatsApp"
                 >
-                  <div className="bg-[#25D366] w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-semibold mb-1">WhatsApp</div>
-                    <div className="text-muted-foreground">
-                      Clique para conversar conosco
-                    </div>
-                  </div>
+                  <MessageCircle className="w-6 h-6 text-white" />
                 </a>
 
                 <div className="flex gap-4">
