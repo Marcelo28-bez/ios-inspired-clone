@@ -40,13 +40,15 @@ const Benefits = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
+              const colors = ['icon-amber', 'icon-green', 'icon-purple', 'icon-teal'];
+              const bgColors = ['icon-bg-amber', 'icon-bg-green', 'icon-bg-purple', 'icon-bg-teal'];
               return (
                 <div
                   key={index}
-                  className="flex gap-6 glass-card rounded-2xl p-8 smooth-transition hover:scale-[1.02]"
+                  className="flex gap-6 glass-card rounded-2xl p-8 smooth-transition hover:scale-[1.02] group"
                 >
-                  <div className="bg-secondary w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-7 h-7 text-foreground" />
+                  <div className={`${bgColors[index]} w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0`}>
+                    <Icon className={`w-7 h-7 ${colors[index]}`} />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>

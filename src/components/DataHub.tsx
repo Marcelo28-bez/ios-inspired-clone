@@ -28,14 +28,16 @@ const DataHub = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-5xl mx-auto">
           {categories.map((category, index) => {
             const Icon = category.icon;
+            const colors = ['icon-green', 'icon-orange', 'icon-blue', 'icon-purple'];
+            const bgColors = ['icon-bg-green', 'icon-bg-orange', 'icon-bg-blue', 'icon-bg-purple'];
             return (
               <div
                 key={index}
-                className="glass-card rounded-2xl p-6 smooth-transition hover:scale-[1.05] cursor-pointer"
+                className="glass-card rounded-2xl p-6 smooth-transition hover:scale-[1.05] cursor-pointer group"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-secondary w-10 h-10 rounded-xl flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-foreground" />
+                  <div className={`${bgColors[index]} w-10 h-10 rounded-xl flex items-center justify-center`}>
+                    <Icon className={`w-5 h-5 ${colors[index]}`} />
                   </div>
                   <span className="font-semibold text-lg">{category.name}</span>
                 </div>

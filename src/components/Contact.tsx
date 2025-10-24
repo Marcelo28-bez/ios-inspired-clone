@@ -105,8 +105,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
+                  <div className="icon-bg-blue w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-blue)/0.3)] transition-all duration-300">
+                    <Phone className="w-6 h-6 icon-blue" />
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Telefones</div>
@@ -121,15 +121,15 @@ const Contact = () => {
                   href="https://wa.me/5585981362242" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#25D366] hover:bg-[#25D366]/90 transition-colors"
+                  className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#25D366] hover:bg-[#25D366]/90 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all duration-300"
                   aria-label="WhatsApp"
                 >
                   <MessageCircle className="w-6 h-6 text-white" />
                 </a>
 
                 <div className="flex gap-4">
-                  <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary" />
+                  <div className="icon-bg-amber w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-amber)/0.3)] transition-all duration-300">
+                    <Mail className="w-6 h-6 icon-amber" />
                   </div>
                   <div>
                     <div className="font-semibold mb-1">E-mail</div>
@@ -140,8 +140,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
+                  <div className="icon-bg-purple w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-purple)/0.3)] transition-all duration-300">
+                    <MapPin className="w-6 h-6 icon-purple" />
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Localização</div>
@@ -152,8 +152,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
+                  <div className="icon-bg-teal w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-teal)/0.3)] transition-all duration-300">
+                    <Clock className="w-6 h-6 icon-teal" />
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Horário de Atendimento</div>
@@ -167,30 +167,30 @@ const Contact = () => {
 
             <div className="glass-card rounded-2xl p-8 ios-shadow">
               <div className="flex items-start gap-3 mb-4">
-                <div className="bg-primary/10 w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <div className="icon-bg-green w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0">
                   <span className="text-xl">📊</span>
                 </div>
                 <h4 className="font-bold text-lg">Por que escolher a PRODADOS?</h4>
               </div>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <div className="w-1.5 h-1.5 rounded-full icon-green" />
                   25 anos de experiência comprovada
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <div className="w-1.5 h-1.5 rounded-full icon-blue" />
                   Tecnologia própria
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <div className="w-1.5 h-1.5 rounded-full icon-purple" />
                   Operação nacional
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <div className="w-1.5 h-1.5 rounded-full icon-amber" />
                   Equipe altamente qualificada
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <div className="w-1.5 h-1.5 rounded-full icon-teal" />
                   Grandes clientes e cases de sucesso
                 </li>
               </ul>

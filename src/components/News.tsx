@@ -72,11 +72,11 @@ const News = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1.5">
-                    <Calendar className="w-4 h-4" />
+                    <Calendar className="w-4 h-4 icon-teal" />
                     {article.date}
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <Clock className="w-4 h-4" />
+                    <Clock className="w-4 h-4 icon-amber" />
                     {article.readTime} de leitura
                   </div>
                 </div>

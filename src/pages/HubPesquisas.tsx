@@ -91,6 +91,8 @@ export default function HubPesquisas() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {censoCategories.map((category, index) => {
                 const Icon = category.icon;
+                const colors = ['icon-green', 'icon-amber', 'icon-blue', 'icon-purple', 'icon-teal'];
+                const bgColors = ['icon-bg-green', 'icon-bg-amber', 'icon-bg-blue', 'icon-bg-purple', 'icon-bg-teal'];
                 return (
                   <Card 
                     key={index}
@@ -98,8 +100,8 @@ export default function HubPesquisas() {
                     onClick={() => window.open(category.link, '_blank')}
                   >
                     <CardHeader>
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 smooth-transition">
-                        <Icon className="w-6 h-6 text-primary" />
+                      <div className={`w-12 h-12 rounded-xl ${bgColors[index]} flex items-center justify-center mb-4`}>
+                        <Icon className={`w-6 h-6 ${colors[index]}`} />
                       </div>
                       <CardTitle className="text-xl">{category.title}</CardTitle>
                       <CardDescription>{category.description}</CardDescription>

@@ -44,20 +44,22 @@ const Services = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const iconColor = index === 0 ? 'icon-blue' : 'icon-teal';
+            const iconBg = index === 0 ? 'icon-bg-blue' : 'icon-bg-teal';
             return (
               <div
                 key={index}
-                className="glass-card rounded-2xl p-10 ios-shadow smooth-transition hover:scale-[1.02]"
+                className="glass-card rounded-2xl p-10 ios-shadow smooth-transition hover:scale-[1.02] group"
               >
-                <div className="bg-secondary w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                  <Icon className="w-8 h-8 text-foreground" />
+                <div className={`${iconBg} w-16 h-16 rounded-2xl flex items-center justify-center mb-6`}>
+                  <Icon className={`w-8 h-8 ${iconColor}`} />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                 <ul className="space-y-3">
                   {service.items.map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      <div className={`w-1.5 h-1.5 rounded-full ${iconColor}`} />
                       {item}
                     </li>
                   ))}
