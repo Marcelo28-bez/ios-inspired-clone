@@ -53,7 +53,7 @@ const Values = () => {
                 key={index}
                 className="glass-card rounded-2xl p-8 smooth-transition hover:scale-[1.02] hover:ios-shadow-lg group"
               >
-                <div className={`${bgColors[index]} w-14 h-14 rounded-xl flex items-center justify-center mb-6`}>
+                <div className={`${bgColors[index]} w-14 h-14 rounded-xl flex items-center justify-center mb-6 icon-3d`}>
                   <Icon className={`w-7 h-7 ${colors[index]}`} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{value.title}</h3>

@@ -105,7 +105,7 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="icon-bg-blue w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-blue)/0.3)] transition-all duration-300">
+                  <div className="icon-bg-blue w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d group hover:shadow-[0_0_20px_hsl(var(--icon-blue)/0.3)] transition-all duration-300">
                     <Phone className="w-6 h-6 icon-blue" />
                   </div>
                   <div>
@@ -128,7 +128,7 @@ const Contact = () => {
                 </a>
 
                 <div className="flex gap-4">
-                  <div className="icon-bg-amber w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-amber)/0.3)] transition-all duration-300">
+                  <div className="icon-bg-amber w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d group hover:shadow-[0_0_20px_hsl(var(--icon-amber)/0.3)] transition-all duration-300">
                     <Mail className="w-6 h-6 icon-amber" />
                   </div>
                   <div>
@@ -140,7 +140,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="icon-bg-purple w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-purple)/0.3)] transition-all duration-300">
+                  <div className="icon-bg-purple w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d group hover:shadow-[0_0_20px_hsl(var(--icon-purple)/0.3)] transition-all duration-300">
                     <MapPin className="w-6 h-6 icon-purple" />
                   </div>
                   <div>
@@ -152,7 +152,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="icon-bg-teal w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group hover:shadow-[0_0_20px_hsl(var(--icon-teal)/0.3)] transition-all duration-300">
+                  <div className="icon-bg-teal w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d group hover:shadow-[0_0_20px_hsl(var(--icon-teal)/0.3)] transition-all duration-300">
                     <Clock className="w-6 h-6 icon-teal" />
                   </div>
                   <div>
@@ -167,9 +167,9 @@ const Contact = () => {
 
             <div className="glass-card rounded-2xl p-8 ios-shadow">
               <div className="flex items-start gap-3 mb-4">
-                <div className="icon-bg-green w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">📊</span>
-                </div>
+                  <div className="icon-bg-green w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d">
+                    <span className="text-xl">📊</span>
+                  </div>
                 <h4 className="font-bold text-lg">Por que escolher a PRODADOS?</h4>
               </div>
               <ul className="space-y-2 text-muted-foreground">

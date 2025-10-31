@@ -100,7 +100,7 @@ export default function HubPesquisas() {
                     onClick={() => window.open(category.link, '_blank')}
                   >
                     <CardHeader>
-                      <div className={`w-12 h-12 rounded-xl ${bgColors[index]} flex items-center justify-center mb-4`}>
+                      <div className={`w-12 h-12 rounded-xl ${bgColors[index]} flex items-center justify-center mb-4 icon-3d`}>
                         <Icon className={`w-6 h-6 ${colors[index]}`} />
                       </div>
                       <CardTitle className="text-xl">{category.title}</CardTitle>

@@ -19,7 +19,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-16">
           {/* Nossa Missão */}
           <div className="glass-card rounded-2xl p-8 ios-shadow smooth-transition hover:scale-[1.02] group">
-            <div className="icon-bg-blue w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+            <div className="icon-bg-blue w-16 h-16 rounded-2xl flex items-center justify-center mb-6 icon-3d">
               <Target className="w-8 h-8 icon-blue" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Nossa Missão</h3>
@@ -30,7 +30,7 @@ const About = () => {
 
           {/* Nossa Visão */}
           <div className="glass-card rounded-2xl p-8 ios-shadow smooth-transition hover:scale-[1.02] group">
-            <div className="icon-bg-purple w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+            <div className="icon-bg-purple w-16 h-16 rounded-2xl flex items-center justify-center mb-6 icon-3d">
               <Eye className="w-8 h-8 icon-purple" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Nossa Visão</h3>
