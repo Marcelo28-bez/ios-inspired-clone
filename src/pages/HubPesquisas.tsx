@@ -10,31 +10,31 @@ export default function HubPesquisas() {
       icon: Users,
       title: "População",
       description: "Dados demográficos e distribuição populacional",
-      link: "https://censo2022.ibge.gov.br/panorama/"
+      link: "https://cidades.ibge.gov.br/"
     },
     {
       icon: Home,
       title: "Domicílios",
       description: "Características dos domicílios brasileiros",
-      link: "https://censo2022.ibge.gov.br/panorama/"
+      link: "https://cidades.ibge.gov.br/"
     },
     {
       icon: Briefcase,
       title: "Trabalho e Rendimento",
       description: "Informações sobre emprego e renda",
-      link: "https://censo2022.ibge.gov.br/panorama/"
+      link: "https://cidades.ibge.gov.br/"
     },
     {
       icon: GraduationCap,
       title: "Educação",
       description: "Níveis de escolaridade e alfabetização",
-      link: "https://censo2022.ibge.gov.br/panorama/"
+      link: "https://cidades.ibge.gov.br/"
     },
     {
       icon: MapPin,
       title: "Dados Regionais",
       description: "Informações por estado e município",
-      link: "https://censo2022.ibge.gov.br/panorama/"
+      link: "https://cidades.ibge.gov.br/"
     }
   ];
 
