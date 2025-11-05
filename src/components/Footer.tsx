@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <img src={prodadosLogo} alt="PRODADOS Logo" className="h-12 mb-2" />
-            <div className="text-sm text-primary-foreground/80">
+            <img src={prodadosLogo} alt="PRODADOS Logo" className="h-16 mb-2" />
+            <div className="text-base text-primary-foreground/80">
               Pesquisa & Insight Hub
             </div>
           </div>
