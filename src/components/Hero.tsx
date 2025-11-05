@@ -1,5 +1,6 @@
 import { TrendingUp, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import prodadosLogo from "@/assets/prodados-logo.png";
 
 const Hero = () => {
   return (
@@ -9,6 +10,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
+          <img src={prodadosLogo} alt="PRODADOS" className="h-24 md:h-32 mx-auto mb-8" />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Transformando<br />Dados em Resultados
           </h1>
