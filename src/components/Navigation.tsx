@@ -1,5 +1,6 @@
 import { Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import prodadosLogo from "@/assets/prodados-logo.png";
 
 const Navigation = () => {
   return (
@@ -28,9 +29,8 @@ const Navigation = () => {
       <nav className="sticky top-0 z-50 glass-card ios-shadow">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-foreground">PRODADOS</span>
-              <span className="text-sm text-muted-foreground">Pesquisa & Insight Hub</span>
+            <div className="flex items-center gap-3">
+              <img src={prodadosLogo} alt="PRODADOS Logo" className="h-12" />
             </div>
 
             <div className="hidden md:flex items-center gap-8">
