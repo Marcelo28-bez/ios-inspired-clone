@@ -34,7 +34,7 @@ export default function HubPesquisas() {
       icon: MapPin,
       title: "Dados Regionais",
       description: "Informações por estado e município",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://cidades.ibge.gov.br/brasil/ce/fortaleza/panorama/"
     }
   ];
 
