@@ -22,13 +22,13 @@ export default function HubPesquisas() {
       icon: Briefcase,
       title: "Trabalho e Rendimento",
       description: "Informações sobre emprego e renda",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
     },
     {
       icon: GraduationCap,
       title: "Educação",
       description: "Níveis de escolaridade e alfabetização",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
     },
     {
       icon: MapPin,
