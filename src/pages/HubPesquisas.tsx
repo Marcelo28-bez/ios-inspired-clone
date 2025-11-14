@@ -3,8 +3,14 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Users, MapPin, Home, Briefcase, GraduationCap } from "lucide-react";
+import { useSearchParams } from "next/navigation"; // <<< ADICIONADO
 
 export default function HubPesquisas() {
+
+  // <<< ADICIONADO: captura o parâmetro ?view=...
+  const searchParams = useSearchParams();
+  const viewMode = searchParams.get("view") || "default";
+
   const censoCategories = [
     {
       icon: Users,
@@ -22,19 +28,19 @@ export default function HubPesquisas() {
       icon: Briefcase,
       title: "Trabalho e Rendimento",
       description: "Informações sobre emprego e renda",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
     },
     {
       icon: GraduationCap,
       title: "Educação",
       description: "Níveis de escolaridade e alfabetização",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
     },
     {
       icon: MapPin,
       title: "Dados Regionais",
       description: "Informações por estado e município",
-      link: "https://cidades.ibge.gov.br/brasil/ce/fortaleza/panorama/"
+      link: "https://cidades.ibge.gov.br/"
     }
   ];
 
@@ -44,6 +50,7 @@ export default function HubPesquisas() {
       
       <main className="flex-1 pt-32 pb-20">
         <div className="container mx-auto px-4">
+          
           {/* Hero Section */}
           <div className="text-center mb-16 space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold">
@@ -53,6 +60,15 @@ export default function HubPesquisas() {
               Acesse dados oficiais do Censo 2022 e outras pesquisas do Instituto Brasileiro de Geografia e Estatística
             </p>
           </div>
+
+          {/* <<< ADICIONADO — BLOCO QUE MOSTRA A VISUALIZAÇÃO */}
+          {viewMode !== "default" && (
+            <div className="glass-card ios-shadow rounded-xl p-4 mb-10 text-center">
+              <p className="text-lg font-semibold">
+                Modo de visualização: <span className="text-primary">{viewMode}</span>
+              </p>
+            </div>
+          )}
 
           {/* Censo 2022 Highlight */}
           <div className="glass-card ios-shadow-lg rounded-2xl p-8 mb-12">
