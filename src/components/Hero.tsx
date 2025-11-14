@@ -11,8 +11,7 @@ const Hero = () => {
           <img src={prodadosLogo} alt="PRODADOS" className="h-48 md:h-64 mx-auto mb-8" />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">Insights que Impulsionam Estratégias
           </h1>
-          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">​
-Transformamos comportamentos, mercados e operações em inteligência acionável para CEOs e executivos que precisam decidir com precisão, velocidade e confiança.</p>
+          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">​ Transformamos comportamentos, mercados e operações em inteligência acionável para decidir com precisão, velocidade e confiança.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
             <Button size="lg" variant="secondary" className="rounded-xl text-base px-8 py-6">
