@@ -8,9 +8,7 @@ const About = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">25 Anos Decodificando Mercados e Criando Estratégias de Sucesso
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A PRODADOS se destaca por sua abrangência de serviços, que vão além da pesquisa de mercado tradicional, incluindo monitoramento, prospecção, planejamento, execução e trade marketing.
-          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">​A PRODADOS é um hub especializado em Inteligência de Mercado, Pesquisa, Estratégia e Trade Marketing, combinando análise avançada, leitura de comportamento do consumidor e visão comercial para orientar decisões críticas. Somos mais que uma empresa de pesquisa, somos um parceiro estratégico para líderes que precisam enxergar o que está acontecendo e o que está prestes a acontecer.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-16">

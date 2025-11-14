@@ -2,21 +2,12 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 const Contact = () => {
-  return (
-    <section id="contato" className="py-24 bg-secondary/30">
+  return <section id="contato" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Vamos Transformar Seus Dados em<br />Resultados Extraordinários
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Vamos Transformar Análise em Resultados Excepcionais<br />Resultados Extraordinários
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Solicite uma consultoria gratuita e descubra como a PRODADOS pode impulsionar o crescimento do seu negócio através de pesquisas estratégicas.
@@ -34,21 +25,14 @@ const Contact = () => {
                   <label className="text-sm font-medium mb-2 block">
                     Nome Completo <span className="text-destructive">*</span>
                   </label>
-                  <Input
-                    placeholder="Seu nome completo"
-                    className="rounded-xl"
-                  />
+                  <Input placeholder="Seu nome completo" className="rounded-xl" />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">
                     E-mail <span className="text-destructive">*</span>
                   </label>
-                  <Input
-                    type="email"
-                    placeholder="seu@email.com"
-                    className="rounded-xl"
-                  />
+                  <Input type="email" placeholder="seu@email.com" className="rounded-xl" />
                 </div>
               </div>
 
@@ -57,10 +41,7 @@ const Contact = () => {
                   <label className="text-sm font-medium mb-2 block">
                     Telefone <span className="text-destructive">*</span>
                   </label>
-                  <Input
-                    placeholder="(85) 99999-9999"
-                    className="rounded-xl"
-                  />
+                  <Input placeholder="(85) 99999-9999" className="rounded-xl" />
                 </div>
 
                 <div>
@@ -86,10 +67,7 @@ const Contact = () => {
                 <label className="text-sm font-medium mb-2 block">
                   Mensagem
                 </label>
-                <Textarea
-                  placeholder="Conte-nos sobre seu projeto ou necessidade de pesquisa..."
-                  className="rounded-xl min-h-32"
-                />
+                <Textarea placeholder="Conte-nos sobre seu projeto ou necessidade de pesquisa..." className="rounded-xl min-h-32" />
               </div>
 
               <Button className="w-full rounded-xl py-6 text-base">
@@ -117,13 +95,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <a 
-                  href="https://wa.me/5585981362242" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#25D366] hover:bg-[#25D366]/90 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all duration-300"
-                  aria-label="WhatsApp"
-                >
+                <a href="https://wa.me/5585981362242" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#25D366] hover:bg-[#25D366]/90 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all duration-300" aria-label="WhatsApp">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </a>
 
@@ -198,8 +170,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
