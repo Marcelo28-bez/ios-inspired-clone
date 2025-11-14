@@ -16,7 +16,7 @@ export default function HubPesquisas() {
       icon: Home,
       title: "Domicílios",
       description: "Características dos domicílios brasileiros",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
     },
     {
       icon: Briefcase,
