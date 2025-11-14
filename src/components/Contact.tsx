@@ -133,37 +133,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            <div className="glass-card rounded-2xl p-8 ios-shadow">
-              <div className="flex items-start gap-3 mb-4">
-                  <div className="icon-bg-green w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d">
-                    <span className="text-xl">📊</span>
-                  </div>
-                <h4 className="font-bold text-lg">Por que escolher a PRODADOS?</h4>
-              </div>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-green" />
-                  25 anos de experiência comprovada
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-blue" />
-                  Tecnologia própria
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-purple" />
-                  Operação nacional
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-amber" />
-                  Equipe altamente qualificada
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-teal" />
-                  Grandes clientes e cases de sucesso
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
