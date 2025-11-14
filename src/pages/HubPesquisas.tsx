@@ -10,7 +10,7 @@ export default function HubPesquisas() {
       icon: Users,
       title: "População",
       description: "Dados demográficos e distribuição populacional",
-      link: "https://cidades.ibge.gov.br/"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
     },
     {
       icon: Home,
