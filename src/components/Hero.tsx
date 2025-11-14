@@ -9,8 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           <img src={prodadosLogo} alt="PRODADOS" className="h-48 md:h-64 mx-auto mb-8" />
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">Insights que Impulsionam Estratégias
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">Inteligência que Antecipa Mercados e Acelera Decisões Estratégicas</h1>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">​ Transformamos comportamentos, mercados e operações em inteligência acionável para decidir com precisão, velocidade e confiança.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
