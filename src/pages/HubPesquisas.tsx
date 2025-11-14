@@ -138,7 +138,7 @@ export default function HubPesquisas() {
               </div>
               
               <div className="space-y-3">
-                <h4 className="font-semibold text-lg">Cidades@</h4>
+                <h4 className="font-semibold text-lg">Cidades</h4>
                 <p className="text-muted-foreground text-sm mb-3">
                   Informações completas sobre todos os municípios brasileiros
                 </p>
@@ -147,7 +147,7 @@ export default function HubPesquisas() {
                   className="rounded-xl"
                   onClick={() => window.open('https://cidades.ibge.gov.br/', '_blank')}
                 >
-                  Acessar Cidades@
+                  Acessar Cidades
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </Button>
               </div>
