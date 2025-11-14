@@ -7,7 +7,7 @@ const Contact = () => {
   return <section id="contato" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Vamos Transformar Análise em Resultados Excepcionais<br />Resultados Extraordinários
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Vamos Transformar Análise em Resultados Excepcionais
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Solicite uma consultoria gratuita e descubra como a PRODADOS pode impulsionar o crescimento do seu negócio através de pesquisas estratégicas.
