@@ -66,7 +66,7 @@ export default function HubPesquisas() {
                   <Button 
                     size="lg" 
                     className="rounded-xl"
-                    onClick={() => window.open('https://censo2022.ibge.gov.br/', '_blank')}
+                    onClick={() => window.open('https://censo2022.ibge.gov.br/panorama/', '_blank')}
                   >
                     Acessar Censo 2022
                     <ExternalLink className="ml-2 h-4 w-4" />
