@@ -16,19 +16,19 @@ export default function HubPesquisas() {
       icon: Home,
       title: "Domicílios",
       description: "Características dos domicílios brasileiros",
-      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=2"
     },
     {
       icon: Briefcase,
       title: "Trabalho e Rendimento",
       description: "Informações sobre emprego e renda",
-      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=11"
     },
     {
       icon: GraduationCap,
       title: "Educação",
       description: "Níveis de escolaridade e alfabetização",
-      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=1"
+      link: "https://censo2022.ibge.gov.br/panorama/indicadores.html?localidade=BR&tema=5"
     },
     {
       icon: MapPin,
