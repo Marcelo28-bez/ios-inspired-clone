@@ -6,7 +6,7 @@ const About = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             Sobre a PRODADOS
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">​25 Anos Decodificando Mercados e Criando Estratégias de Sucesso <br />Estratégias de Sucesso
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">25 Anos Decodificando Mercados e Criando Estratégias de Sucesso
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A PRODADOS se destaca por sua abrangência de serviços, que vão além da pesquisa de mercado tradicional, incluindo monitoramento, prospecção, planejamento, execução e trade marketing.
