@@ -30,21 +30,35 @@ const DataHub = () => {
             const Icon = category.icon;
             const colors = ['icon-green', 'icon-orange', 'icon-blue', 'icon-purple'];
             const bgColors = ['icon-bg-green', 'icon-bg-orange', 'icon-bg-blue', 'icon-bg-purple'];
+            const links: Record<string, string> = {
+              "Tendências" : "https://hsmmanagement.com.br/editorial/",
+              "Economia": "#",   // por enquanto vazio
+              "Consumo": "#",    // por enquanto vazio
+              "Mercado": "#",    // por enquanto vazio
+            };
+
+            const url = links[category.name]
+
             return (
-              <div
+              <a 
                 key={index}
-                className="glass-card rounded-2xl p-6 smooth-transition hover:scale-[1.05] cursor-pointer group"
+                href={url}
+                target={url !== "#" ? "_blank" : undefined}
+                rel="nooper noreferrer"
+                className="block"
               >
-                <div className="flex items-center gap-3 mb-2">
-                  <div className={`${bgColors[index]} w-10 h-10 rounded-xl flex items-center justify-center icon-3d`}>
-                    <Icon className={`w-5 h-5 ${colors[index]}`} />
+                <div className="glass-card rounded-2xl p-6 smooth-transition hover:scale-[1.05] cursor-pointer group">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className={`${bgColors[index]} w-10 h-10 rounded-xl flex items-center justify-center icon-3d`}>
+                      <Icon className={`w-5 h-5 ${colors[index]}`} />
+                    </div>
+                    <span className="font-semibold text-lg">{category.name}</span>
                   </div>
-                  <span className="font-semibold text-lg">{category.name}</span>
+                  <div className="text-3xl font-bold text-muted-foreground ml-13">
+                    {category.count}
+                  </div>
                 </div>
-                <div className="text-3xl font-bold text-muted-foreground ml-13">
-                  {category.count}
-                </div>
-              </div>
+              </a>
             );
           })}
         </div>
