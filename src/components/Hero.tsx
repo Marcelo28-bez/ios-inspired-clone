@@ -1,10 +1,8 @@
 import { TrendingUp, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import prodadosLogo from "@/assets/prodados-logo.png";
-
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative min-h-[90vh] flex items-center gradient-hero overflow-hidden">
+  return <section id="inicio" className="relative min-h-[90vh] flex items-center gradient-hero overflow-hidden">
       {/* Overlay gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20" />
       
@@ -12,7 +10,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           <img src={prodadosLogo} alt="PRODADOS" className="h-48 md:h-64 mx-auto mb-8" />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transformando<br />Dados em Resultados
+            Insights que Impulsionam Estratégias<br />Dados em Resultados
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">
             Há 25 anos encurtando os caminhos entre a necessidade do cliente e a estratégia da empresa, gerando vendas e rentabilidade através de pesquisas de mercado e trade marketing.
@@ -22,7 +20,7 @@ const Hero = () => {
             <Button size="lg" variant="secondary" className="rounded-xl text-base px-8 py-6">
               Solicitar Proposta →
             </Button>
-            <Button size="lg" variant="outline" className="rounded-xl text-base px-8 py-6 border-white/30 text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="rounded-xl text-base px-8 py-6 border-white/30 text-slate-50 bg-slate-500 hover:bg-slate-400">
               Saiba Mais
             </Button>
           </div>
@@ -55,8 +53,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
