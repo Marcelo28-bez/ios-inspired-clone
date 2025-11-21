@@ -42,7 +42,7 @@ const Contact = () => {
             >
               {/* StaticForms required key */}
               <input type="hidden" name="accessKey" value="sf_l9gh1mn16dif34lg6l3i5505" />
-              <input type="hidden" name="replyTo" value="email" />
+              
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium mb-2 block">
@@ -122,6 +122,8 @@ const Contact = () => {
                 required
                 />
               </div>
+              {/* makes the email replies go to the sender */}
+              <input type="hidden" name="replyTo" value="email"/>
               <Button type="submit"className="w-full rounded-xl py-6 text-base">
                 Enviar Solicitação →
               </Button>
