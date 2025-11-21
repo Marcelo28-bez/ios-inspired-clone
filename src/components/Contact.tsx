@@ -16,20 +16,35 @@ const Contact = () => {
           <div className="glass-card rounded-2xl p-10 ios-shadow">
             <h3 className="text-2xl font-bold mb-8">Solicitar Proposta</h3>
 
-            <form className="space-y-6">
+            <form 
+            action="https://formspree.io/f/xzzwpdje"
+            method="POST"
+            className="space-y-6"
+            >
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium mb-2 block">
                     Nome Completo <span className="text-destructive">*</span>
                   </label>
-                  <Input placeholder="Seu nome completo" className="rounded-xl" />
+                  <Input 
+                  name="nome"
+                  placeholder="Seu nome completo" 
+                  className="rounded-xl" 
+                  required
+                  />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">
                     E-mail <span className="text-destructive">*</span>
                   </label>
-                  <Input type="email" placeholder="seu@email.com" className="rounded-xl" />
+                  <Input 
+                  type="email"
+                  name="email" 
+                  placeholder="seu@email.com" 
+                  className="rounded-xl" 
+                  required
+                  />
                 </div>
               </div>
 
@@ -38,14 +53,19 @@ const Contact = () => {
                   <label className="text-sm font-medium mb-2 block">
                     Telefone <span className="text-destructive">*</span>
                   </label>
-                  <Input placeholder="(85) 99999-9999" className="rounded-xl" />
+                  <Input
+                  name="telefone" 
+                  placeholder="(85) 99999-9999" 
+                  className="rounded-xl" 
+                  required
+                  />
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">
                     Segmento da Empresa <span className="text-destructive">*</span>
                   </label>
-                  <Select>
+                  <Select name="segmento" required>
                     <SelectTrigger className="rounded-xl">
                       <SelectValue placeholder="Selecione o segmento" />
                     </SelectTrigger>
@@ -64,10 +84,13 @@ const Contact = () => {
                 <label className="text-sm font-medium mb-2 block">
                   Mensagem
                 </label>
-                <Textarea placeholder="Conte-nos sobre seu projeto ou necessidade de pesquisa..." className="rounded-xl min-h-32" />
+                <Textarea
+                name="mensagem" 
+                placeholder="Conte-nos sobre seu projeto ou necessidade de pesquisa..." 
+                className="rounded-xl min-h-32" />
               </div>
 
-              <Button className="w-full rounded-xl py-6 text-base">
+              <Button type="submit" className="w-full rounded-xl py-6 text-base">
                 Enviar Solicitação →
               </Button>
             </form>
