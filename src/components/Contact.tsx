@@ -78,11 +78,11 @@ const Contact = () => {
                       <SelectValue placeholder="Selecione o segmento" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="varejo">Varejo</SelectItem>
-                      <SelectItem value="industria">Indústria</SelectItem>
-                      <SelectItem value="servicos">Serviços</SelectItem>
-                      <SelectItem value="tecnologia">Tecnologia</SelectItem>
-                      <SelectItem value="outro">Outro</SelectItem>
+                      <SelectItem value="Varejo">Varejo</SelectItem>
+                      <SelectItem value="Industria">Indústria</SelectItem>
+                      <SelectItem value="Servicos">Serviços</SelectItem>
+                      <SelectItem value="Tecnologia">Tecnologia</SelectItem>
+                      <SelectItem value="Outro">Outro</SelectItem>
                     </SelectContent>
                   </Select>
                   {/* Hidden field that actually gets submitted */}
