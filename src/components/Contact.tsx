@@ -17,12 +17,32 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-8">Solicitar Proposta</h3>
 
             <form 
-            action="https://api.staticforms.xyz/submit"
-            method="POST"
-            className="space-y-6"
+              onSubmit={async (e) => {
+                e.preventDefault();
+
+                const form = e.target as HTMLFormElement;
+                const formData = new FormData(form);
+                try {
+                  const response = await fetch("https//:api.staticforms.xyz/submit", {
+                  method: "POST",
+                  body: formData,
+                });
+
+                if (response.ok) {
+                  alert("Solicitação enviada com sucesso!");
+                  form.reset();
+                } else {
+                  alert("Ocorreu um erro ao enviar a Solicitaçãp.");
+                }
+              } catch (error) {
+                alert("Erro de conexão. Tente novamente.");
+              }
+            }}
+              className="space-y-6"
             >
               {/* StaticForms required key */}
               <input type="hidden" name="accessKey" value="sf_l9gh1mn16dif34lg6l3i5505" />
+              <input type="hidden" name="replyTo" value="email" />
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium mb-2 block">
@@ -70,9 +90,10 @@ const Contact = () => {
                   {/*Select não envia automaticamente - precisamos de um hidden */}
                   <Select 
                      onValueChange={(v) => {
-                      const hidden = document.getElementById("segment-hidden");
+                      const hidden = document.getElementById("segment-hidden") as HTMLInputElement | null;
                       if (hidden) hidden.value = v;
                      }}
+                     required
                     >
                     <SelectTrigger className="rounded-xl">
                       <SelectValue placeholder="Selecione o segmento" />
@@ -101,8 +122,6 @@ const Contact = () => {
                 required
                 />
               </div>
-              {/* makes the email replies go to the sender */}
-              <input type="hidden" name="replyTo" value="email"/>
               <Button type="submit"className="w-full rounded-xl py-6 text-base">
                 Enviar Solicitação →
               </Button>
