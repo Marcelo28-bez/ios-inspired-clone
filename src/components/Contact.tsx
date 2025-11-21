@@ -17,10 +17,12 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-8">Solicitar Proposta</h3>
 
             <form 
-            action="https://formspree.io/f/xzzwpdje"
+            action="https://api.staticforms.xyz/submit"
             method="POST"
             className="space-y-6"
             >
+              {/* StaticForms required key */}
+              <input type="hidden" name="accessKey" value="sf_l9gh1mn16dif34lg6l3i5505" />
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium mb-2 block">
@@ -65,7 +67,13 @@ const Contact = () => {
                   <label className="text-sm font-medium mb-2 block">
                     Segmento da Empresa <span className="text-destructive">*</span>
                   </label>
-                  <Select name="segmento" required>
+                  {/*Select não envia automaticamente - precisamos de um hidden */}
+                  <Select 
+                     onValueChange={(v) => {
+                      const hidden = document.getElementById("segment-hidden");
+                      if (hidden) hidden.value = v;
+                     }}
+                    >
                     <SelectTrigger className="rounded-xl">
                       <SelectValue placeholder="Selecione o segmento" />
                     </SelectTrigger>
@@ -77,6 +85,8 @@ const Contact = () => {
                       <SelectItem value="outro">Outro</SelectItem>
                     </SelectContent>
                   </Select>
+                  {/* Hidden field that actually gets submitted */}
+                  <input type="hidden" id="segment-hidden" name="segment" />
                 </div>
               </div>
 
@@ -87,10 +97,13 @@ const Contact = () => {
                 <Textarea
                 name="mensagem" 
                 placeholder="Conte-nos sobre seu projeto ou necessidade de pesquisa..." 
-                className="rounded-xl min-h-32" />
+                className="rounded-xl min-h-32" 
+                required
+                />
               </div>
-
-              <Button type="submit" className="w-full rounded-xl py-6 text-base">
+              {/* makes the email replies go to the sender */}
+              <input type="hidden" name="replyTo" value="email"/>
+              <Button type="submit"className="w-full rounded-xl py-6 text-base">
                 Enviar Solicitação →
               </Button>
             </form>
