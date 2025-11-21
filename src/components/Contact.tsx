@@ -23,7 +23,7 @@ const Contact = () => {
                 const form = e.target as HTMLFormElement;
                 const formData = new FormData(form);
                 try {
-                  const response = await fetch("https//:api.staticforms.xyz/submit", {
+                  const response = await fetch("https://api.staticforms.xyz/submit", {
                   method: "POST",
                   body: formData,
                 });
