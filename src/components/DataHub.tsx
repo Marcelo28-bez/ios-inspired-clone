@@ -47,7 +47,7 @@ const DataHub = () => {
                 rel="nooper noreferrer"
                 className="block"
               >
-                <div className="glass-card rounded-2xl p-6 smooth-transition hover:scale-[1.05] cursor-pointer group">
+                <div className="glass-card rounded-2xl p-6 card-hover-lift cursor-pointer group">
                   <div className="flex items-center gap-3 mb-2">
                     <div className={`${bgColors[index]} w-10 h-10 rounded-xl flex items-center justify-center icon-3d`}>
                       <Icon className={`w-5 h-5 ${colors[index]}`} />
@@ -63,7 +63,7 @@ const DataHub = () => {
           })}
         </div>
 
-        <div className="max-w-4xl mx-auto glass-card rounded-2xl p-10 ios-shadow">
+        <div className="max-w-4xl mx-auto glass-card rounded-2xl p-10 card-hover-lift">
           <div className="flex justify-between items-center mb-8">
             <h3 className="text-2xl font-bold">Dados Recentes</h3>
             <div className="flex gap-3">

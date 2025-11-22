@@ -55,7 +55,7 @@ const News = () => {
           {articles.map((article, index) => (
             <div
               key={index}
-              className="glass-card rounded-2xl p-8 smooth-transition hover:scale-[1.02] hover:ios-shadow-lg cursor-pointer group"
+              className="glass-card rounded-2xl p-8 card-hover-lift cursor-pointer group"
             >
               <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-4 ${article.categoryColor}`}>
                 {article.category}

@@ -32,7 +32,7 @@ const Benefits = () => {
             const Icon = benefit.icon;
             const colors = ['icon-amber', 'icon-green', 'icon-purple', 'icon-teal'];
             const bgColors = ['icon-bg-amber', 'icon-bg-green', 'icon-bg-purple', 'icon-bg-teal'];
-            return <div key={index} className="flex gap-6 glass-card rounded-2xl p-8 smooth-transition hover:scale-[1.02] group">
+            return <div key={index} className="flex gap-6 glass-card rounded-2xl p-8 card-hover-lift group">
                   <div className={`${bgColors[index]} w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d`}>
                     <Icon className={`w-7 h-7 ${colors[index]}`} />
                   </div>
@@ -44,7 +44,7 @@ const Benefits = () => {
           })}
           </div>
 
-          <div className="glass-card rounded-2xl p-8 ios-shadow max-w-2xl mx-auto">
+          <div className="glass-card rounded-2xl p-8 card-hover-lift max-w-2xl mx-auto">
             <div className="flex items-start gap-3 mb-4">
               <div className="icon-bg-green w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 icon-3d">
                 <span className="text-xl">📊</span>

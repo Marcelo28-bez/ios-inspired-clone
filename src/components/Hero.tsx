@@ -23,7 +23,7 @@ const Hero = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="glass-card rounded-2xl p-8 smooth-transition hover:scale-105 group">
+            <div className="glass-card rounded-2xl p-8 card-hover-lift group">
               <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-4 mx-auto icon-3d group-hover:bg-white/20 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
@@ -31,7 +31,7 @@ const Hero = () => {
               <div className="text-white/80 text-lg">Anos de Experiência</div>
             </div>
 
-            <div className="glass-card rounded-2xl p-8 smooth-transition hover:scale-105 group">
+            <div className="glass-card rounded-2xl p-8 card-hover-lift group">
               <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-4 mx-auto icon-3d group-hover:bg-white/20 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
                 <Users className="w-8 h-8 text-white" />
               </div>
@@ -39,7 +39,7 @@ const Hero = () => {
               <div className="text-white/80 text-lg">Projetos Realizados</div>
             </div>
 
-            <div className="glass-card rounded-2xl p-8 smooth-transition hover:scale-105 group">
+            <div className="glass-card rounded-2xl p-8 card-hover-lift group">
               <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-4 mx-auto icon-3d group-hover:bg-white/20 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
                 <Target className="w-8 h-8 text-white" />
               </div>
