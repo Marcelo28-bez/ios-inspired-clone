@@ -13,7 +13,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Form */}
-          <div className="glass-card rounded-2xl p-10 ios-shadow">
+          <div className="glass-card rounded-2xl p-10 card-hover-lift">
             <h3 className="text-2xl font-bold mb-8">Solicitar Proposta</h3>
 
             <form 
@@ -98,7 +98,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="glass-card rounded-2xl p-8 ios-shadow">
+            <div className="glass-card rounded-2xl p-8 card-hover-lift">
               <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
 
               <div className="space-y-6">

@@ -49,7 +49,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="glass-card rounded-2xl p-10 ios-shadow smooth-transition hover:scale-[1.02] group"
+                className="glass-card rounded-2xl p-10 card-hover-lift group"
               >
                 <div className={`${iconBg} w-16 h-16 rounded-2xl flex items-center justify-center mb-6 icon-3d`}>
                   <Icon className={`w-8 h-8 ${iconColor}`} />
