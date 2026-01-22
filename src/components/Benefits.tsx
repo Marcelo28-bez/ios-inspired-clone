@@ -83,48 +83,9 @@ const Benefits = () => {
                 </div>
                 <h4 className="font-bold text-lg">Clientes que confiam na PRODADOS</h4>
               </div>
-              <div className="grid grid-cols-2 gap-3 text-muted-foreground text-sm">
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-blue" />
-                  Ambev
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-green" />
-                  Natura
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-purple" />
-                  Nestlé
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-amber" />
-                  Itaú
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-teal" />
-                  Bradesco
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-blue" />
-                  Petrobras
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-green" />
-                  Vale
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-purple" />
-                  Magazine Luiza
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-amber" />
-                  Globo
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full icon-teal" />
-                  Carrefour
-                </div>
-              </div>
+              <p className="text-muted-foreground text-sm">
+                Em breve, apresentaremos aqui os principais clientes que já confiaram em nossos serviços.
+              </p>
             </div>
           </div>
         </div>
