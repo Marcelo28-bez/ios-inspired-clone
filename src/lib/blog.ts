@@ -140,7 +140,8 @@ function toPost(entry: FeedEntry): BlogPost {
     category: pickCategory(labels, plain),
     categories: labels,
     excerpt: plain.replace(rawTitle, "").trim().slice(0, 180).trim() + (plain.length > 180 ? "…" : ""),
-    contentHtml,
+    // remove o H1 inicial (título repetido, às vezes com a imagem de capa)
+    contentHtml: contentHtml.replace(/<h1[\s\S]*?<\/h1>/i, ""),
     image: firstImage(contentHtml),
     published: entry.published.$t,
     updated: entry.updated.$t,
