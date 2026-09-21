@@ -221,3 +221,47 @@ All colors MUST be HSL.
     perspective: 1000px;
   }
 }
+
+/* Conteúdo dos artigos do blog */
+@layer components {
+  .blog-content {
+    @apply text-foreground leading-relaxed;
+  }
+  .blog-content * {
+    font-family: inherit !important;
+  }
+  .blog-content p {
+    @apply mb-5 text-base md:text-lg text-foreground/90;
+  }
+  .blog-content h1 {
+    @apply text-3xl font-bold mt-10 mb-4;
+  }
+  .blog-content h2 {
+    @apply text-2xl font-bold mt-10 mb-4;
+  }
+  .blog-content h3 {
+    @apply text-xl font-semibold mt-8 mb-3;
+  }
+  .blog-content a {
+    @apply text-primary underline underline-offset-4;
+  }
+  .blog-content ul {
+    @apply list-disc pl-6 mb-5 space-y-2;
+  }
+  .blog-content ol {
+    @apply list-decimal pl-6 mb-5 space-y-2;
+  }
+  .blog-content blockquote {
+    @apply border-l-4 border-primary/40 pl-4 italic my-6 text-muted-foreground;
+  }
+  .blog-content img {
+    @apply rounded-2xl my-8 mx-auto h-auto max-w-full;
+    box-shadow: var(--shadow-md);
+  }
+  .blog-content iframe {
+    @apply w-full aspect-video rounded-2xl my-8;
+  }
+  .blog-content table {
+    @apply w-full my-6 text-sm;
+  }
+}
