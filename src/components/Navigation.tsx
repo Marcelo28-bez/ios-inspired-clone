@@ -46,6 +46,9 @@ const Navigation = () => {
               <a href="/hub-pesquisas" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Hub de Pesquisas
               </a>
+              <a href="/blog" className="text-foreground hover:text-primary smooth-transition font-medium">
+                Blog
+              </a>
               <a href="/#noticias" className="text-foreground hover:text-primary smooth-transition font-medium">
                 Notícias
               </a>
